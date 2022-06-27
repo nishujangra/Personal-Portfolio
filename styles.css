@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1A4D2E;
+    color: white;
+    padding: 10px 0px;
+    height: 7vh;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: left;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+.navbar ul li:nth-child(1) {
+    padding-left: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+
+}
+
+.navbar>a>img {
+    float: right;
+    height: 28px;
+    width: 28px;
+    padding-left: 3px;
+    border-radius: 9px;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    opacity: 80%;
+    border-radius: 8px;
+}
+
+/* Footer */
+.contact {
+    text-align: center;
+    background-color: #faf3e3;
+    padding-top: 10px;
+}
+
+.contact div {
+    padding: 10px 10px 10px 10px;
+}
+
+.contact hr {
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.contact div a {
+    padding: 0px 7px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact button {
+    display: inline-block;
+    text-align: center;
+    background-color: #c1f4c5;
+    color: #a10035;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+/* Main Content of Home Page */
+.main-idx {
+    height: 80vh;
+    display: flex;
+    background-color: #ff9f29;
+    flex-direction: row;
+}
+
+.main-idx div {
+    padding: 200px 10px 200px 250px;
+    height: 80vh;
+    width: 50vw;
+}
+
+.main-idx div:nth-child(2) {
+    padding: 5% 12% 5% 1%;
+}
+
+.main-idx div img {
+    height: 350px;
+    width: 350px;
+    border-radius: 200px;
+}
+
+.info p {
+    font-size: 14px;
+}
+
+.info p:nth-child(1) {
+    font-size: 32px;
+}
+
+.info p:nth-child(2) {
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+/* Main Content Project Page */
+.main-pro {
+    height: 70vh;
+    display: flex;
+    background-color: #ff9f29;
+    flex-direction: row;
+}
+
+.main-pro>div {
+    width: 33%;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #FFFFDE;
+    border-radius: 50px;
+}
+
+.main-pro div span {
+    font-size: 22px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-pro div p {
+    padding: 0px 15px;
+}
+
+.refrence {
+    padding: 40px 15px;
+}
+
+.refrence a {
+    padding: 15px;
+    display: block;
+}
+
+/* Main Content of CP Page- */
+.main-cp {
+    padding: 140px 30%;
+    background-color: #ff9f29;
+    height: 70vh;
+}
+
+.main-cp div {
+    font-size: 24px;
+}
+
+.cc,
+.cf {
+    padding-bottom: 20px;
+}
+
+.main-cp div a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.main-cp div a:hover {
+    color: grey;
+}
+
+/* Main Content of Form */
+.main-form {
+    height: 80vh;
+    padding: 100px 38%;
+    background-color: #ff9f29;
+}
+
+.contactme {
+    width: 300px;
+    border-radius: 8px;
+    background-color: #c1f4c5;
+}
+
+.contactme h5 {
+    padding: 5px 0px 20px 15px;
+}
+
+.contactme div {
+    padding: 0px 15px 15px 15px;
+}
+
+.contactme input {
+    border-radius: 9px;
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    padding: 3px;
+}
+
+.contactme form div:nth-child(5) {
+    text-align: center;
+}
+
+#send {
+    padding: 7px;
+    border: 0px;
+    background-color: #ff5361;
+    color: #ffff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#send:hover {
+    color: #FFF2F2;
+}
+
+/*** Responsive Design ***/
+
+/* Medium Devices */
+@media(min-width:992px) and (max-width:1199px) {}
+
+/* Small Devices */
+@media(min-width:768px) and (max-width:991px) {
+
+    /* Navigration Bar */
+    .navbar>a>img {
+        float: right;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+    }
+
+    /* Main Content of Home Page */
+    .main-idx {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-idx div {
+        padding: 100px 10px 150px 100px;
+        height: 80vh;
+        width: 50vw;
+    }
+
+    .main-idx div:nth-child(2) {
+        padding: 8% 10% 5% 5%;
+    }
+
+    .main-idx div img {
+        height: 250px;
+        width: 250px;
+        border-radius: 200px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .info p:nth-child(1) {
+        font-size: 32px;
+    }
+
+    .info p:nth-child(2) {
+        font-weight: 600;
+        font-size: 32px;
+        padding-bottom: 18px;
+    }
+
+    /* Main Content of CP Page- */
+    .main-cp {
+        padding: 140px 20.8%;
+        height: 70vh;
+    }
+
+    /* Main Content of Form */
+    .main-form {
+        height: 80vh;
+        padding: 100px 30%;
+        background-color: #ff9f29;
+    }
+}
+
+/* Extra Small Devices */
+@media(min-width:476px) and (max-width:767px) {
+
+    /* Navigation Bar */
+    .navbar ul li {
+        font-size: medium;
+        padding-right: 20px;
+    }
+
+    .navbar ul li:nth-child(1) {
+        padding-left: 15px;
+    }
+
+    .navbar>a>img {
+        float: right;
+        height: 20px;
+        width: 20px;
+        border-radius: 6px;
+    }
+
+    /* Footer */
+    .contact hr {
+        opacity: 1;
+    }
+
+    /* Main Content of Main Page */
+    .main-idx {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #fdeff4;
+    }
+
+    .main-idx div {
+        padding: 90px 10px 90px 50px;
+        height: 80vh;
+        width: 50vw;
+    }
+
+    .main-idx div:nth-child(2) {
+        padding: 13% 10% 5% 3%;
+    }
+
+    .main-idx div img {
+        height: 150px;
+        width: 150px;
+        border-radius: 200px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .info p:nth-child(1) {
+        font-size: 26px;
+    }
+
+    .info p:nth-child(2) {
+        font-weight: 600;
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+
+    /* Main Content Project Page */
+    .main-pro {
+        height: 100%;
+        display: block;
+    }
+
+    .main-pro>div {
+        width: 100%;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: aliceblue;
+    }
+
+    /* Main Content of CP Page- */
+    .main-cp {
+        padding: 100px 28%;
+        height: 60vh;
+        background-color: #fdeff4;
+    }
+
+    .main-cp div {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .main-cp div a {
+        padding-left: 20px;
+    }
+
+    /* Main Content of Form */
+    .main-form {
+        height: 80vh;
+        padding: 100px 23%;
+        background-color: #ff9f29;
+    }
+}
+
+/* Super Extra Small Devices */
+@media(max-width:475px) {
+
+    /* Navigation Bar */
+    .navbar ul li {
+        font-size: 11px;
+        padding-right: 10px;
+    }
+
+    .navbar ul li:nth-child(1) {
+        padding-left: 3px;
+    }
+
+    .navbar>a>img {
+        float: right;
+        height: 15px;
+        width: 15px;
+        border-radius: 3px;
+    }
+
+    /* Footer */
+    .contact hr {
+        opacity: 1;
+    }
+
+    /* Main Content of Main Page */
+    .main-idx {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #fdeff4;
+    }
+
+    .main-idx div {
+        padding: 70px 10px 70px 20px;
+        height: 80vh;
+        width: 50vw;
+    }
+
+    .main-idx div:nth-child(2) {
+        padding: 19% 10% 5% 2%;
+    }
+
+    .main-idx div img {
+        height: 130px;
+        width: 130px;
+        border-radius: 200px;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .info p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .info p:nth-child(2) {
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+
+    /* Main Content Project Page */
+    .main-pro {
+        height: 100%;
+        display: block;
+    }
+
+    .main-pro>div {
+        width: 100%;
+        margin: 12px 5px;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: #ffe7bf;
+    }
+
+    /* Main Content of CP Page- */
+    .main-cp {
+        padding: 100px 0 0 26%;
+        height: 60vh;
+    }
+
+    .main-cp div {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .main-cp div a {
+        padding-left: 20px;
+    }
+
+    /* Main Content of Form */
+    .main-form {
+        padding: 100px 7%;
+    }
+
+    .contactme {
+        width: 242px;
+    }
+}
